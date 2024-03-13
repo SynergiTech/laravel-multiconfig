@@ -6,16 +6,16 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "illuminate/database": "^8.43|^9.0|^10.0",
-        "illuminate/support": "^8.43|^9.0|^10.0",
-        "illuminate/collections": "^8.43|^9.0|^10.0",
-        "illuminate/config": "^8.43|^9.0|^10.0",
-        "illuminate/cache": "^8.43|^9.0|^10.0",
-        "symfony/console": "^5.3|^6.0"
+        "illuminate/database": "^8.43|^9.0|^10.0|^11.0",
+        "illuminate/support": "^8.43|^9.0|^10.0|^11.0",
+        "illuminate/collections": "^8.43|^9.0|^10.0|^11.0",
+        "illuminate/config": "^8.43|^9.0|^10.0|^11.0",
+        "illuminate/cache": "^8.43|^9.0|^10.0|^11.0",
+        "symfony/console": "^5.3|^6.0|^7.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.4",
-        "orchestra/testbench": "^8.0",
+        "orchestra/testbench": "^8.0|^9.0",
         "phpunit/phpunit": "^10.0"
     },
     "autoload-dev": {
