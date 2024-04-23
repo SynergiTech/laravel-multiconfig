@@ -6,9 +6,11 @@ use SynergiTech\Multiconfig\Eloquent\Metadata;
 use SynergiTech\Multiconfig\Eloquent\Setting;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
+use Orchestra\Testbench\Attributes\WithMigration;
 use Tests\BaseTestCase;
 use Tests\Dummies\DummyModel;
 
+#[WithMigration]
 class CleanCommandTest extends BaseTestCase
 {
     use RefreshDatabase;

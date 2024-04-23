@@ -9,9 +9,11 @@ use SynergiTech\Multiconfig\HasConfig;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Orchestra\Testbench\Attributes\WithMigration;
 use Tests\BaseTestCase;
 use Tests\Dummies\DummyModel;
 
+#[WithMigration]
 class FilterBySettingTest extends BaseTestCase
 {
     use RefreshDatabase;

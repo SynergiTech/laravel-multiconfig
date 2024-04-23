@@ -20,9 +20,11 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\HigherOrderCollectionProxy;
 use Mockery;
+use Orchestra\Testbench\Attributes\WithMigration;
 use RuntimeException;
 use Tests\Dummies\DummyModel;
 
+#[WithMigration]
 class HasConfigTest extends BaseTestCase
 {
     use RefreshDatabase;

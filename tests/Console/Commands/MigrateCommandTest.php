@@ -17,9 +17,11 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Mockery;
+use Orchestra\Testbench\Attributes\WithMigration;
 use Tests\BaseTestCase;
 use Tests\Dummies\DummyModel;
 
+#[WithMigration]
 class MigrateCommandTest extends BaseTestCase
 {
     use RefreshDatabase;
