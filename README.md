@@ -22,8 +22,9 @@ User::find(1)->settings->set('color', 'red');
 
 ## Requirements
 
-- Laravel 8.x or later
-- PHP 8.0 or later
+- Laravel 12.x or later
+- PHP 8.2 or later
+- For Laravel 8.x - 11.x use version 1.0.x of Multiconfig.
 
 ## How it works
 

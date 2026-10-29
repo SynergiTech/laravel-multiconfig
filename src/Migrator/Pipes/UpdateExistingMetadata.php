@@ -124,7 +124,7 @@ class UpdateExistingMetadata
         // each of them one by one and just hit the "update" button on the setting.
         $oldSettings = Setting::query()
             ->where('metadata_id', $metadata->getKey())
-            ->lazyById(column: 'user_settings.id');
+            ->lazyById(column: 'user_settings.id', alias: 'id');
 
         $count = 0;
 

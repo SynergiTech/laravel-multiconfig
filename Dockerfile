@@ -1,4 +1,4 @@
-ARG PHP_VERSION=8.0
+ARG PHP_VERSION=8.2
 FROM php:$PHP_VERSION-cli-alpine
 
 RUN apk add git zip unzip autoconf make g++
@@ -16,7 +16,7 @@ USER dev
 
 COPY --chown=dev composer.json ./
 
-ARG LARAVEL=8
+ARG LARAVEL=12
 RUN composer require laravel/framework ^$LARAVEL.0
 
 COPY --chown=dev . .
